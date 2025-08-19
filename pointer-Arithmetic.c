@@ -40,15 +40,30 @@
 // }
 
 //  ============     char increment ============
+// #include <stdio.h>
+// int main(){
+// char star = '*';
+// char  *ptr = &star;
+// printf("Orginal Byets =  %u\n" , ptr );
+// *ptr++ ;
+// printf("increment  Byets = %u\n" , ptr);
+// *ptr--;
+// printf("dicrement / Orginal Byets %u\n" , ptr) ;
+
+//     return 0;
+// }
+
+// ======================  
+
 #include <stdio.h>
 int main(){
-char star = '*';
-char  *ptr = &star;
-printf("Orginal Byets =  %u\n" , ptr );
-*ptr++ ;
-printf("increment  Byets = %u\n" , ptr);
-*ptr--;
-printf("dicrement / Orginal Byets %u\n" , ptr) ;
+int age = 22;
+int _age = 23;
+int *ptr = &age;
+int *_ptr = &_age;
+printf("Difference %u\n" ,ptr - _ptr  );
+_ptr = &age;
+printf("Comparisome = %u\n", ptr == _ptr   );
 
     return 0;
 }
