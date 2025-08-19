@@ -26,15 +26,29 @@
 
 
 //  ============     float increment ============
+// #include <stdio.h>
+// int main(){
+// float price  = 20.00;
+//  float *ptr = &price;
+//  printf("Orginal Byets = %u\n" , ptr );
+// *ptr++;
+//   printf("increment Byets = %u\n" , ptr );
+// *ptr--;
+//   printf("decrement  / orginal  Byets = %u\n" , ptr );
+
+//     return 0;
+// }
+
+//  ============     char increment ============
 #include <stdio.h>
 int main(){
-float price  = 20.00;
- float *ptr = &price;
- printf("Orginal byets = %u\n" , ptr );
-*ptr++;
-  printf("increment byets = %u\n" , ptr );
+char star = '*';
+char  *ptr = &star;
+printf("Orginal Byets =  %u\n" , ptr );
+*ptr++ ;
+printf("increment  Byets = %u\n" , ptr);
 *ptr--;
-  printf("decrement byets = %u\n" , ptr );
+printf("dicrement / Orginal Byets %u\n" , ptr) ;
 
     return 0;
 }
