@@ -16,6 +16,7 @@
 int main(){
 int age = 12;
 int *ptr = &age;
+*ptr++;
 printf("%u\n", ptr);
 *ptr--;
 printf("%u\n", ptr);
