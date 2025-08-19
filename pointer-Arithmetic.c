@@ -58,10 +58,10 @@
 #include <stdio.h>
 int main(){
 int age = 22;
-int _age = 23;
+int _age = 50;
 int *ptr = &age;
 int *_ptr = &_age;
-printf("Difference %u\n" ,ptr - _ptr  );
+printf("Difference %d\n" ,ptr - _ptr );
 _ptr = &age;
 printf("Comparisome = %u\n", ptr == _ptr   );
 
