@@ -23,25 +23,43 @@
 
 //  ==================  Traverse an array ========
 
+// #include <stdio.h>
+// int main()
+// {
+//     int NID[5];
+//     // input
+//     int *ptr = &NID[0];
+//     for (int i = 0; i < 5; i++)
+//     {
+//         printf("%d index = ", i);
+//         // scanf("%d", (ptr + i));
+//         scanf("%d", &NID[i]);
+
+//     }
+
+//     // output
+//     for (int i = 0; i < 5; i++)
+//     {
+//         // printf("%d index =  %d\n", i, *(ptr + i));
+//         printf("%d  index = %d\n" ,i, NID[i] );
+//     }
+
+//     return 0;
+// }
+
+//  ==================  Traverse an array   0.2 Version  ========
 #include <stdio.h>
-int main()
-{
+int main(){
     int NID[5];
-    // input
+    // input 
     int *ptr = &NID[0];
-    for (int i = 0; i < 5; i++)
-    {
-        printf("%d index = ", i);
-        scanf("%d", (ptr + i));
+    for(int i =0 ; i<5; i++){
+        printf(" %d index =  " ,i );
+        scanf("%d" , &NID[i]);
     }
-
-    // output
-    for (int i = 0; i < 5; i++)
-    {
-        printf("%d index =  %d\n", i, *(ptr + i));
+    for(int i =0 ; i<5 ; i++){
+        printf("%d index =  %d\n" , i , NID[i]);
     }
-
-    return 0;
 }
 
 // #include <stdio.h>
