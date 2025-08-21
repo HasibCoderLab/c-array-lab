@@ -75,37 +75,60 @@
 
 //    👉👉  🔹🔹  Question   3️⃣  write a function to reverse an array
 
-#include <stdio.h>
-void reverse(int arr[], int n);
-void printArr(int arr[], int n);
-int main()
-{
-    int arr[] = {1, 2, 3, 4, 5, 6};
-    reverse(arr, 6); //  function call
-    printArr(arr, 6);  //  function call
-    return 0;
-}
+// #include <stdio.h>
+// void reverse(int arr[], int n);
+// void printArr(int arr[], int n);
+// int main()
+// {
+//     int arr[] = {1, 2, 3, 4, 5, 6};
+//     reverse(arr, 6); //  function call
+//     printArr(arr, 6);  //  function call
+//     return 0;
+// }
 
-//  function definition
-void printArr(int arr[], int n)
-{
-    for (int i = 0; i < n; i++)
-    {
-        printf("%d\t", arr[i]);
+// //  function definition
+// void printArr(int arr[], int n)
+// {
+//     for (int i = 0; i < n; i++)
+//     {
+//         printf("%d\t", arr[i]);
+//     }
+//     printf("\n");
+// }
+// //  function definition
+
+// void reverse(int arr[], int n)
+// {
+//     for (int i = 0; i < 5 / 2; i++)
+//     {
+//         int firstValue = arr[i];
+//         int lastValue = arr[n - i - 1];
+//         arr[i] = lastValue;
+//         arr[n - i - 1] = firstValue;
+//     }
+// }
+
+//    👉👉  🔹🔹 4️⃣  Question write a program to store  the  first n  fibonacci numbers
+
+#include <stdio.h>
+int main(){
+    int n;
+    printf("Enter Number < 2 : ");
+    scanf("%d" , &n);
+
+    int fibo [n];
+    fibo[0]= 0;
+    fibo[1] = 1;
+
+    for(int i =2 ; i<n ; i++){
+        fibo[i] = fibo[i-1] + fibo[i-2];
+        printf("%d\t" , fibo[i]);
     }
     printf("\n");
-}
-//  function definition
 
-void reverse(int arr[], int n)
-{
-    for (int i = 0; i < 5 / 2; i++)
-    {
-        int firstValue = arr[i];
-        int lastValue = arr[n - i - 1];
-        arr[i] = lastValue;
-        arr[n - i - 1] = firstValue;
-    }
+
+
+return 0;
 }
 
 // #include <stdio.h>
@@ -113,5 +136,7 @@ void reverse(int arr[], int n)
 
 // return 0;
 // }
+
+
 
 // 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣ 7️⃣ 8️⃣ 9️⃣ 🔟
