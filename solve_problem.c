@@ -81,11 +81,12 @@ void printArr(int arr[], int n);
 int main()
 {
     int arr[] = {1, 2, 3, 4, 5, 6};
-    reverse(arr, 6);
-    printArr(arr, 6);
+    reverse(arr, 6); //  function call
+    printArr(arr, 6);  //  function call
     return 0;
 }
 
+//  function definition
 void printArr(int arr[], int n)
 {
     for (int i = 0; i < n; i++)
@@ -94,6 +95,7 @@ void printArr(int arr[], int n)
     }
     printf("\n");
 }
+//  function definition
 
 void reverse(int arr[], int n)
 {
