@@ -73,20 +73,37 @@
 // ==========  function array ===================
 
 
+// #include <stdio.h>
+// void printNumbers(int arr[] , int n);
+// int main(){
+//      int arr[] = {1,2,3,4,5,6,7};
+//      printNumbers(arr , 7);// function call
+// return 0;
+// }
+// // function Definition
+// void printNumbers(int arr[] , int n){
+//     for(int i =0; i<n ; i++){
+//         printf(" %d\t",arr[i]) ;
+//     }
+//     printf("\n");
+
+// }
+
+// ==========  function array 2.0 ===================
+
+
 #include <stdio.h>
-void printNumbers(int arr[] , int n);
+void printN(int *arr, int n);
 int main(){
-     int arr[] = {1,2,3,4,5,6,7};
-     printNumbers(arr , 7);// function call
+    int arr[] = {12,13,14,15,16,17, 1 ,7};
+printN(arr , 8);
 return 0;
 }
-// function Definition
-void printNumbers(int arr[] , int n){
-    for(int i =0; i<n ; i++){
-        printf(" %d\t",arr[i]) ;
+void printN(int *arr , int n){
+    for(int i = 0; i<n ; i++){
+        printf("%d\t" , arr[i] );
     }
-    printf("\n");
-
+    printf("\n") ;
 }
 
 
