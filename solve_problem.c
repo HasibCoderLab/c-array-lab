@@ -49,28 +49,61 @@
 //     return 0;
 // }
 //   👉👉  🔹🔹  Question  2️⃣  write a function  to count the numbers of odd numbers in array
+// #include <stdio.h>
+// int count(int arr[], int n);
+// int main()
+// {
+//     int arr[] = {1, 2, 3, 4, 5, 6, 7};
+
+//     printf("%d\n", count(arr, 7));
+
+//     return 0;
+// }
+// // Function Definition
+// int count(int arr[], int n)
+// {
+//     int count = 0;
+//     for (int i = 0; i < n; i++)
+//     {
+//         if (arr[i] % 2 != 0)
+//         {
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+
+//    👉👉  🔹🔹  Question   3️⃣  write a function to reverse an array
+
 #include <stdio.h>
-int count(int arr[], int n);
+void reverse(int arr[], int n);
+void printArr(int arr[], int n);
 int main()
 {
-    int arr[] = {1, 2, 3, 4, 5, 6, 7};
-
-    printf("%d\n", count(arr, 7));
-
+    int arr[] = {1, 2, 3, 4, 5, 6};
+    reverse(arr, 6);
+    printArr(arr, 6);
     return 0;
 }
-// Function Definition
-int count(int arr[], int n)
+
+void printArr(int arr[], int n)
 {
-    int count = 0;
     for (int i = 0; i < n; i++)
     {
-        if (arr[i] % 2 != 0)
-        {
-            count++;
-        }
+        printf("%d\t", arr[i]);
     }
-    return count;
+    printf("\n");
+}
+
+void reverse(int arr[], int n)
+{
+    for (int i = 0; i < 5 / 2; i++)
+    {
+        int firstValue = arr[i];
+        int lastValue = arr[n - i - 1];
+        arr[i] = lastValue;
+        arr[n - i - 1] = firstValue;
+    }
 }
 
 // #include <stdio.h>
