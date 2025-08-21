@@ -111,24 +111,24 @@
 //    👉👉  🔹🔹 4️⃣  Question write a program to store  the  first n  fibonacci numbers
 
 #include <stdio.h>
-int main(){
+int main()
+{
     int n;
-    printf("Enter Number < 2 : ");
-    scanf("%d" , &n);
+    printf("Enter Number > 2 :");
+    scanf("%d", &n);
 
-    int fibo [n];
-    fibo[0]= 0;
+    int fibo[n];
+    fibo[0] = 0;
     fibo[1] = 1;
 
-    for(int i =2 ; i<n ; i++){
-        fibo[i] = fibo[i-1] + fibo[i-2];
-        printf("%d\t" , fibo[i]);
+    for (int i = 2; i < n; i++)
+    {
+        fibo[i] = fibo[i - 1] + fibo[i - 2];
+        printf("%d\t", fibo[i]);
     }
     printf("\n");
 
-
-
-return 0;
+    return 0;
 }
 
 // #include <stdio.h>
@@ -136,7 +136,5 @@ return 0;
 
 // return 0;
 // }
-
-
 
 // 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣ 7️⃣ 8️⃣ 9️⃣ 🔟
