@@ -48,19 +48,19 @@
 // }
 
 //  ==================  Traverse an array   0.2 Version  ========
-#include <stdio.h>
-int main(){
-    int NID[5];
-    // input 
-    int *ptr = &NID[0];
-    for(int i =0 ; i<5; i++){
-        printf(" %d index =  " ,i );
-        scanf("%d" , &NID[i]);
-    }
-    for(int i =0 ; i<5 ; i++){
-        printf("%d index =  %d\n" , i , NID[i]);
-    }
-}
+// #include <stdio.h>
+// int main(){
+//     int NID[5];
+//     // input 
+//     int *ptr = &NID[0];
+//     for(int i =0 ; i<5; i++){
+//         printf(" %d index =  " ,i );
+//         scanf("%d" , &NID[i]);
+//     }
+//     for(int i =0 ; i<5 ; i++){
+//         printf("%d index =  %d\n" , i , NID[i]);
+//     }
+// }
 
 // #include <stdio.h>
 // int main(){
@@ -68,6 +68,27 @@ int main(){
 // return 0;
 // }
 //
+
+
+// ==========  function array ===================
+
+
+#include <stdio.h>
+void printNumbers(int arr[] , int n);
+int main(){
+     int arr[] = {1,2,3,4,5,6,7};
+     printNumbers(arr , 7);// function call
+return 0;
+}
+// function Definition
+void printNumbers(int arr[] , int n){
+    for(int i =0; i<n ; i++){
+        printf(" %d\t",arr[i]) ;
+    }
+    printf("\n");
+
+}
+
 
 // #include <stdio.h>
 // int main(){
