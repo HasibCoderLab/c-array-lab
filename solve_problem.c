@@ -131,10 +131,20 @@ int main()
     return 0;
 }
 
-// #include <stdio.h>
-// int main(){
 
-// return 0;
-// }
+//    👉👉  🔹🔹   5️⃣  create a 2D array , storing the tables 2& 3
+
+#include <stdio.h>
+void soteTable(int arr[] [10] ,int n , int m ,int number  );
+int main(){
+int tables[2][10];
+return 0;
+}
+// Function Diefinition 
+void soteTable(int arr[] [10] ,int n , int m ,int number  ){
+    for(int i = 0; i<m; i++){
+        arr[n][10] =  number *( i+1);
+    }
+}
 
 // 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣ 7️⃣ 8️⃣ 9️⃣ 🔟
