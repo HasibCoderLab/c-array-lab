@@ -110,40 +110,55 @@
 
 //    👉👉  🔹🔹 4️⃣  Question write a program to store  the  first n  fibonacci numbers
 
-#include <stdio.h>
-int main()
-{
-    int n;
-    printf("Enter Number > 2 :");
-    scanf("%d", &n);
+// #include <stdio.h>
+// int main()
+// {
+//     int n;
+//     printf("Enter Number > 2 :");
+//     scanf("%d", &n);
 
-    int fibo[n];
-    fibo[0] = 0;
-    fibo[1] = 1;
+//     int fibo[n];
+//     fibo[0] = 0;
+//     fibo[1] = 1;
 
-    for (int i = 2; i < n; i++)
-    {
-        fibo[i] = fibo[i - 1] + fibo[i - 2];
-        printf("%d\t", fibo[i]);
-    }
-    printf("\n");
+//     for (int i = 2; i < n; i++)
+//     {
+//         fibo[i] = fibo[i - 1] + fibo[i - 2];
+//         printf("%d\t", fibo[i]);
+//     }
+//     printf("\n");
 
-    return 0;
-}
-
+//     return 0;
+// }
 
 //    👉👉  🔹🔹   5️⃣  create a 2D array , storing the tables 2& 3
 
 #include <stdio.h>
-void soteTable(int arr[] [10] ,int n , int m ,int number  );
-int main(){
-int tables[2][10];
-return 0;
+void soteTable(int arr[][10], int n, int m, int number);
+int main()
+{
+    int tables[2][10];
+    soteTable(tables, 0, 10, 2); // function call
+    soteTable(tables, 1, 10, 3); // Function call
+
+    for (int i = 0; i < 10; i++)
+    {
+        printf("%d\t", tables[0][i]);
+    }
+    printf("\n");
+    for (int i = 0; i < 10; i++)
+    {
+        printf("%d\t", tables[1][i]);
+    }
+    printf("\n");
+    return 0;
 }
-// Function Diefinition 
-void soteTable(int arr[] [10] ,int n , int m ,int number  ){
-    for(int i = 0; i<m; i++){
-        arr[n][10] =  number *( i+1);
+// Function Diefinition
+void soteTable(int arr[][10], int n, int m, int number)
+{
+    for (int i = 0; i < m; i++)
+    {
+        arr[n][i] = number * (i + 1);
     }
 }
 
